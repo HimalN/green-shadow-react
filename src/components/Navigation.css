@@ -44,6 +44,8 @@
 .hover-nav-bar:hover {
     background-color: #02661a;
     color: white !important;
+    border-radius: 28px;
+    transition:all 0.5s ease-out;
 }
 #log-out {
     width: 40px;
