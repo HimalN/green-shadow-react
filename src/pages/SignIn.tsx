@@ -38,8 +38,7 @@ export const SignIn = () => {
                             id="login-button"
                             className="btn btn-primary"
                             type="button"
-                            onClick={() => navigate('/home')}
-                        >
+                            onClick={() => navigate('/home')}>
                             Sign In
                         </button>
                     </form>
@@ -47,8 +46,8 @@ export const SignIn = () => {
                     <div id="signup-text">
                         Don't have an account?
                         <span id="sign-up-button">
-                <Link to={'/signup'}>Sign Up here</Link>
-            </span>
+                            <Link to={'/signup'}>Sign Up here</Link>
+                        </span>
                     </div>
                 </div>
             </div>

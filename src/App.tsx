@@ -2,6 +2,7 @@ import './App.css'
 import {createBrowserRouter, RouterProvider} from "react-router";
 import {RootLayout} from "./components/RootLayout.tsx";
 import {SignIn} from "./pages/SignIn.tsx";
+import {Dashboard} from "./pages/Dashboard.tsx";
 
 function App() {
 
@@ -10,8 +11,8 @@ function App() {
             element : <RootLayout/>,
             children:[
                 {path : '',element : <SignIn/>},
-                // {path : '/signup',element : <SignUp/>},
-                //{path : '/home',element : <Dashboard/>},
+                //{path : '/signup',element : <SignUp/>},
+                {path : '/home',element : <Dashboard/>},
                 // {path : '/field',element : <Field/>},
                 // {path : '/crop',element : <Crop/>},
                 // {path : '/staff',element : <Staff/>},
