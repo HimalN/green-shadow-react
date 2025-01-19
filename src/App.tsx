@@ -3,6 +3,7 @@ import {createBrowserRouter, RouterProvider} from "react-router";
 import {RootLayout} from "./components/RootLayout.tsx";
 import {SignIn} from "./pages/SignIn.tsx";
 import {Dashboard} from "./pages/Dashboard.tsx";
+import {Field} from "./pages/Field.tsx";
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
                 {path : '',element : <SignIn/>},
                 //{path : '/signup',element : <SignUp/>},
                 {path : '/home',element : <Dashboard/>},
-                // {path : '/field',element : <Field/>},
+                {path : '/field',element : <Field/>},
                 // {path : '/crop',element : <Crop/>},
                 // {path : '/staff',element : <Staff/>},
                 // {path : '/vehicle',element : <Vehicle/>},
