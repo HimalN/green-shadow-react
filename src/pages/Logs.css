@@ -1,0 +1,16 @@
+/*custom form*/
+.custom-form> .row{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.custom-button{
+    margin: 30px;
+}
+.logs{
+    margin-top: 100px;
+}
+.btn{
+    margin-right: 10px;
+}

@@ -8,6 +8,7 @@ import {Crop} from "./pages/Crop.tsx";
 import {Staff} from "./pages/Staff.tsx";
 import {Vehicle} from "./pages/Vehicle.tsx";
 import {Equipment} from "./pages/Equipment.tsx";
+import {Logs} from "./pages/Logs.tsx";
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
                 {path : '/staff',element : <Staff/>},
                 {path : '/vehicle',element : <Vehicle/>},
                 {path : '/equipment',element : <Equipment/>},
-                // {path : '/logs',element : <Logs/>}
+                {path : '/logs',element : <Logs/>}
             ]},
     ])
 
