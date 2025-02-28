@@ -65,7 +65,7 @@ export const getFields = createAsyncThunk(
     async () => {
         const token = localStorage.getItem('jwt_token');
         try {
-            const response = await api.get('/get', {
+            const response = await api.get('/get',{
                 headers: {
                     Authorization: token ? `Bearer ${token}` : "",
                 },
@@ -73,7 +73,6 @@ export const getFields = createAsyncThunk(
             return response.data;
         } catch (error) {
             console.error(error);
-            throw error;
         }
     }
 );
