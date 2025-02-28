@@ -251,13 +251,17 @@ export const Vehicle = () => {
                             <table className="table">
                                 <thead>
                                 <tr>
-                                    <th scope="col">Vehicle ID</th>
-                                    <th scope="col">Model</th>
-                                    <th scope="col">Type</th>
-                                    <th scope="col">License Plate</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col">Allocated Staff</th>
-                                    <th scope="col">Remarks</th>
+                                    <th>Vehicle Code</th>
+                                    <th>Plate Number</th>
+                                    <th>Fuel Type</th>
+                                    <th>Category</th>
+                                    <th>Remarks</th>
+                                    <th>Status</th>
+                                    <th>Member ID</th>
+                                    <th>Name</th>
+                                    <th>Role</th>
+                                    <th>Phone Number</th>
+                                    <th>Email</th>
                                 </tr>
                                 </thead>
                                 <tbody id="vehicles-table-tb">
