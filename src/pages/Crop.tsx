@@ -8,38 +8,39 @@ export const Crop = () => {
                     <div className=" row">
                         <div className="col-2">
                             <label className="form-label">Code</label>
-                            <input id="cropCode" type="text" className="form-control" placeholder="Ex: C0001"
+                            <input id="crop_code" type="text" className="form-control" placeholder="Ex: C0001"
                                    aria-label="Code"/>
                         </div>
                         <div className="col">
-                            <label className="form-label">Common name</label>
-                            <input id="cropCommonName" type="text" className="form-control" placeholder="Ex: Corn"
-                                   aria-label="Common name"/>
-                        </div>
-                        <div className="col">
-                            <label className="form-label">Scientific name</label>
-                            <input id="cropScientificName" type="text" className="form-control"
-                                   placeholder="Ex: Also dera" aria-label="Scientific name"/>
-                        </div>
-                    </div>
-                    <div className=" row">
-                        <div className="col">
-                            <label className="form-label">Image</label>
-                            <input type="file" className="form-control" id="cropImage"/>
-                        </div>
-                        <div className="col">
                             <label className="form-label">Category</label>
-                            <input id="cropCategory" type="text" className="form-control" placeholder="Ex: Grains"
+                            <input id="category" type="text" className="form-control" placeholder="Ex: Grains"
                                    aria-label="Category"/>
                         </div>
                         <div className="col">
+                            <label className="form-label">Common name</label>
+                            <input id="common_name" type="text" className="form-control" placeholder="Ex: Corn"
+                                   aria-label="Common name"/>
+                        </div>
+                        <div className="col">
+                            <label className="form-label">Image</label>
+                            <input type="file" className="form-control" id="img"/>
+                        </div>
+
+                    </div>
+                    <div className=" row">
+                        <div className="col">
+                            <label className="form-label">Scientific name</label>
+                            <input id="scientific_name" type="text" className="form-control"
+                                   placeholder="Ex: Also dera" aria-label="Scientific name"/>
+                        </div>
+                        <div className="col">
                             <label className="form-label">Season</label>
-                            <input id="cropSeason" type="text" className="form-control" placeholder="Ex: Winter"
+                            <input id="season" type="text" className="form-control" placeholder="Ex: Winter"
                                    aria-label="Season"/>
                         </div>
                         <div className="col">
                             <label className="form-label">Field</label>
-                            <select className="form-select" id="cropFieldSelectID" required>
+                            <select className="form-select" id="field_code" required>
                                 <option selected disabled value=""></option>
                             </select>
                             <label id="fieldCodeCheck"></label>
