@@ -290,16 +290,23 @@ export const Staff = () => {
                                    aria-label="default input example"
                                    value={SearchedField}
                                    onChange={(e) => setSearchedField(e.target.value)}/>
-                            {/*<button id="btnSearchFields-staff" type="button" className="btn btn-primary"*/}
-                            {/*        onClick={handleFieldSearch}>Search*/}
-                            {/*</button>*/}
+                            <button id="btnSearchFields-staff" type="button" className="btn btn-primary"
+                                    onClick={handleFieldSearch}>Search
+                            </button>
                         </div>
-
+                        {/*Search Section*/}
+                        <div id="search-staff-div" className="col">
+                            {/*Label for Search*/}
+                            <label id="lblSearchStaff" htmlFor="txtSearch-staff">Search Staff :</label>
+                            <input id="txtSearch-staff" className="form-control" type="text" placeholder="Search by ID or Name"
+                                   aria-label="default input example"
+                                   value={SearchedStaff}
+                                   onChange={(e) => setSearchedStaff(e.target.value)}/>
+                            {/*Search Button*/}
+                            <button id="search-staff" type="button" className="btn btn-primary" onClick={handleSearch}>Search</button>
+                        </div>
                         <div className="col-5">
                             <div className="custom-button">
-                                <button id="search-staff-btn" type="button" className="btn btn-primary"
-                                        onClick={handleSearch}>Search
-                                </button>
                                 <button id="add-staff-btn" type="button" className="btn btn-success"
                                         onClick={handleSave}>Add
                                 </button>
@@ -322,24 +329,43 @@ export const Staff = () => {
                             <tr>
                                 <th scope="col">Code</th>
                                 <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Phone</th>
                                 <th scope="col">Designation</th>
-                                <th scope="col">Gender</th>
-                                <th scope="col">Joined date</th>
-                                <th scope="col">Date of Birth</th>
-                                <th scope="col">Building no or name</th>
-                                <th scope="col">Street or lane</th>
-                                <th scope="col">Main city</th>
-                                <th scope="col">Main state</th>
-                                <th scope="col">Postal code</th>
-                                <th scope="col">Contact No.</th>
-                                <th scope="col">Email Address</th>
+                                <th scope="col">DOB</th>
                                 <th scope="col">Role</th>
-                                <th scope="col">Field</th>
-                                <th scope="col">Vehicle</th>
+                                <th scope="col">Gender</th>
+                                <th scope="col">Joined Date</th>
+                                <th scope="col">Address 01</th>
+                                <th scope="col">Address 02</th>
+                                <th scope="col">Address 03</th>
+                                <th scope="col">Address 04</th>
+                                <th scope="col">Address 05</th>
+                                <th scope="col">Field Code</th>
                             </tr>
                             </thead>
-                            <tbody id="staff-table">
-
+                            <tbody id="staff-table-tb">
+                            {staffs.map((staff, index) => (
+                                <tr key={index}>
+                                    <td>{staff.staff_id}</td>
+                                    <td>{staff.first_name}</td>
+                                    <td>{staff.last_name}</td>
+                                    <td>{staff.email}</td>
+                                    <td>{staff.phone_no}</td>
+                                    <td>{staff.designation}</td>
+                                    <td>{staff.dob}</td>
+                                    <td>{staff.role}</td>
+                                    <td>{staff.gender}</td>
+                                    <td>{staff.joined_date}</td>
+                                    <td>{staff.address_01}</td>
+                                    <td>{staff.address_02}</td>
+                                    <td>{staff.address_03}</td>
+                                    <td>{staff.address_04}</td>
+                                    <td>{staff.address_05}</td>
+                                    <td>{staff.field_code}</td>
+                                </tr>
+                            ))}
                             </tbody>
                         </table>
                     </div>
