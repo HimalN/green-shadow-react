@@ -1,3 +1,27 @@
 .crop{
     margin-top: 100px;
 }
+#txtSearchField{
+    width: 150px;
+
+}
+#btnSearchField{
+    position: relative;
+    top: -26px;
+    left: 155px;
+    width: 60px;
+    height: 35px;
+    font-size: 11px;
+}
+.nw-added{
+    position: relative;
+    top: 10px;
+}
+#search-crop{
+    position: relative;
+    top: 20px;
+    right: -138px;
+    width: 60px;
+    height: 35px;
+    font-size: 11px;
+}
