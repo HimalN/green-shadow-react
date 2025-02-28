@@ -5,3 +5,9 @@
     font-size: 12px;
 
 }
+.col>input{
+    width: 100%;
+}
+.col-3>input{
+    width: 250px;
+}
