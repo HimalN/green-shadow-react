@@ -102,6 +102,7 @@ export const Field = () => {
 
     return (
         <div>
+            <style>{'body { overflow-y: scroll; }'}</style>
             <div className="field" id="field">
                 <div className="custom-form">
                     <div className=" row">
@@ -173,44 +174,44 @@ export const Field = () => {
                         <button type="button" className="btn btn-success" id="add-field-button"
                                 onClick={handleSave}>Add
                         </button>
-                            <button type="button" className="btn btn-danger" id="delete-field-button"
-                                    onClick={handleDelete}>Delete
-                            </button>
-                            <button type="button" className="btn btn-warning" id="update-field-button"
-                                    onClick={handleUpdate}>Update
-                            </button>
-                            <button type="button" className="btn btn-info" id="clear-field-button"
-                                    onClick={handleClear}>Clear
-                            </button>
-                        </div>
-                        <div className="custom-table table-responsive p-3">
-                            <table className="table">
-                                <thead>
-                                <tr>
-                                    <th scope="col">Code</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Location</th>
-                                    <th scope="col">Extent size</th>
-                                    <th scope="col">image1</th>
-                                    <th scope="col">image2</th>
+                        <button type="button" className="btn btn-danger" id="delete-field-button"
+                                onClick={handleDelete}>Delete
+                        </button>
+                        <button type="button" className="btn btn-warning" id="update-field-button"
+                                onClick={handleUpdate}>Update
+                        </button>
+                        <button type="button" className="btn btn-info" id="clear-field-button"
+                                onClick={handleClear}>Clear
+                        </button>
+                    </div>
+                    <div className="custom-table table-responsive p-3">
+                        <table className="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Code</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Location</th>
+                                <th scope="col">Extent size</th>
+                                <th scope="col">image1</th>
+                                <th scope="col">image2</th>
+                            </tr>
+                            </thead>
+                            <tbody id="field-table">
+                            {fields.map((field, index) => (
+                                <tr key={index}>
+                                    <td>{field.field_code}</td>
+                                    <td>{field.field_name}</td>
+                                    <td>{field.field_location}</td>
+                                    <td>{field.extent_size}</td>
+                                    <td><img src={`data:image/png;base64,${field.img_01}`} width="160"/></td>
+                                    <td><img src={`data:image/png;base64,${field.img_02}`} width="160"/></td>
                                 </tr>
-                                </thead>
-                                <tbody id="field-table">
-                                {fields.map((field, index) => (
-                                    <tr key={index}>
-                                        <td>{field.field_code}</td>
-                                        <td>{field.field_name}</td>
-                                        <td>{field.field_location}</td>
-                                        <td>{field.extent_size}</td>
-                                        <td><img src={`data:image/png;base64,${field.img_01}`} width="160"/></td>
-                                        <td><img src={`data:image/png;base64,${field.img_02}`} width="160"/></td>
-                                    </tr>
-                                ))}
-                                </tbody>
-                            </table>
-                        </div>
+                            ))}
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-            );
+        </div>
+    );
 };
